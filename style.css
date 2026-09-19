@@ -1,0 +1,394 @@
+/* Estilos generales - diseño mobile first */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+  color: #222222;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 30px;
+}
+
+h2 {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #b5412c;
+  color: #243447;
+  font-size: 26px;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+a {
+  color: #174f86;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  padding: 11px 18px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #b5412c;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8f2f1e;
+}
+
+/* Encabezado y menú */
+header {
+  background-color: #243447;
+  color: white;
+}
+
+.encabezado {
+  width: 92%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 18px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin: 0 0 12px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+nav li {
+  width: 100%;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #354b63;
+}
+
+/* Contenedor principal */
+main {
+  width: 92%;
+  max-width: 1100px;
+  margin: 25px auto;
+}
+
+section {
+  margin-bottom: 35px;
+}
+
+/* Hero */
+.hero {
+  min-height: 320px;
+  padding: 35px 20px;
+  border: 1px solid #cccccc;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-contenido {
+  max-width: 700px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-contenido p {
+  margin: 6px 0;
+}
+
+.cta {
+  margin-top: 18px;
+}
+
+/* Servicios */
+.texto-seccion {
+  margin-bottom: 20px;
+}
+
+.lista-servicios {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.servicio {
+  width: 100%;
+  padding: 18px;
+  border: 1px solid #bbbbbb;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.icono {
+  margin: 0 0 8px;
+  font-size: 36px;
+}
+
+/* Catálogo */
+.lista-vehiculos,
+.lista-marcas {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.vehiculo,
+.grupo-marcas {
+  width: 100%;
+  padding: 18px;
+  border: 1px solid #bbbbbb;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.vehiculo figure {
+  margin: 0;
+}
+
+.vehiculo img {
+  height: 190px;
+  object-fit: contain;
+  background-color: #e5e8ec;
+}
+
+figcaption,
+.nota-foto,
+.fecha {
+  color: #555555;
+  font-size: 14px;
+}
+
+.precio {
+  color: #9d301b;
+  font-size: 21px;
+}
+
+.vehiculo ul {
+  padding-left: 22px;
+}
+
+.aviso {
+  padding: 12px;
+  border-left: 4px solid #b5412c;
+  background-color: #fff0e8;
+}
+
+summary {
+  padding: 10px 0;
+  color: #174f86;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.detalle-precio {
+  margin-top: 15px;
+  border-top: 1px solid #cccccc;
+}
+
+/* Sobre nosotros */
+.nosotros-contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #bbbbbb;
+  background-color: white;
+}
+
+.nosotros figure {
+  margin: 0;
+}
+
+.nosotros img {
+  max-height: 280px;
+  object-fit: contain;
+  background-color: #e5e8ec;
+}
+
+/* Testimonios */
+.lista-testimonios {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+blockquote {
+  width: 100%;
+  margin: 0;
+  padding: 18px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+blockquote footer {
+  margin-top: 10px;
+  color: #555555;
+  font-size: 14px;
+}
+
+/* Formulario */
+.contacto form {
+  max-width: 700px;
+  padding: 20px;
+  border: 1px solid #bbbbbb;
+  background-color: white;
+}
+
+.campo {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Pie de página */
+.pie-pagina {
+  padding: 25px 15px;
+  background-color: #243447;
+  color: white;
+  text-align: center;
+}
+
+.pie-pagina p {
+  margin: 6px 0;
+}
+
+.pie-pagina a {
+  color: white;
+}
+
+/* Tableta */
+@media (min-width: 600px) {
+  .lista-servicios,
+  .lista-vehiculos,
+  .lista-marcas,
+  .lista-testimonios {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .servicio,
+  .vehiculo,
+  .grupo-marcas,
+  blockquote {
+    width: calc(50% - 9px);
+  }
+}
+
+/* Computador */
+@media (min-width: 900px) {
+  .encabezado {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  nav {
+    width: auto;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav li {
+    width: auto;
+  }
+
+  nav a {
+    padding: 10px 15px;
+  }
+
+  .servicio,
+  .vehiculo,
+  .grupo-marcas,
+  blockquote {
+    width: calc(33.333% - 12px);
+  }
+
+  .nosotros-contenido {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nosotros figure,
+  .nosotros-contenido > div {
+    width: 50%;
+  }
+}
